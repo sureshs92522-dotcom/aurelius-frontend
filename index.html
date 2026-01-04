@@ -1,5 +1,4 @@
-                                  
-                                                                                                                                                                                                                                                                                                                                                                           <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -11,12 +10,12 @@
 <style>
 :root{
   --gold:#d4af37;
-  --dark:#050505;
+  --black:#050505;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{
   font-family:'Poppins',sans-serif;
-  background:var(--dark);
+  background:var(--black);
   color:#fff;
 }
 a{text-decoration:none;color:inherit}
@@ -24,13 +23,13 @@ a{text-decoration:none;color:inherit}
 /* HEADER */
 header{
   position:fixed;
-  top:0;
+  top:0;left:0;
   width:100%;
   padding:20px 60px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background:rgba(0,0,0,.6);
+  background:rgba(0,0,0,.65);
   backdrop-filter:blur(8px);
   z-index:1000;
 }
@@ -58,17 +57,18 @@ nav a{
   height:100vh;
   background:
     linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
-    url("https://images.unsplash.com/photo-1508923567004-3a6b8004f3d7") center/cover;
+    url("https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
   display:flex;
   align-items:center;
   padding:0 70px;
 }
-.hero-content{
-  max-width:600px;
+.hero-box{
+  max-width:650px;
 }
 .hero h1{
   font-family:'Playfair Display',serif;
-  font-size:56px;
+  font-size:58px;
   line-height:1.1;
   margin-bottom:20px;
 }
@@ -76,11 +76,11 @@ nav a{
 .hero p{
   font-size:16px;
   opacity:.85;
-  margin-bottom:30px;
+  margin-bottom:35px;
 }
 .hero-buttons a{
   margin-right:15px;
-  padding:14px 28px;
+  padding:14px 30px;
   border-radius:30px;
   font-size:14px;
 }
@@ -93,36 +93,34 @@ nav a{
   color:var(--gold);
 }
 
-/* SECTION */
-section{
-  padding:100px 60px;
-}
+/* SECTIONS */
+section{padding:110px 60px}
 .section-title{
   text-align:center;
-  margin-bottom:60px;
+  margin-bottom:70px;
 }
 .section-title h2{
   font-family:'Playfair Display',serif;
-  font-size:38px;
+  font-size:40px;
 }
 .section-title span{color:var(--gold)}
 
 /* SERVICES */
 .services{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:30px;
 }
 .card{
   background:#0c0c0c;
-  border:1px solid #1c1c1c;
-  padding:35px;
+  border:1px solid #1f1f1f;
+  padding:40px;
   border-radius:20px;
-  transition:.3s;
+  transition:.35s;
 }
 .card:hover{
+  transform:translateY(-8px);
   border-color:var(--gold);
-  transform:translateY(-6px);
 }
 .card h3{
   color:var(--gold);
@@ -131,16 +129,16 @@ section{
 
 /* WHY */
 .why{
-  max-width:800px;
+  max-width:850px;
   margin:auto;
   text-align:center;
-  font-size:16px;
+  font-size:17px;
   opacity:.9;
 }
 
 /* FOOTER */
 footer{
-  padding:40px;
+  padding:45px;
   text-align:center;
   font-size:13px;
   opacity:.6;
@@ -155,8 +153,8 @@ footer{
     padding:0 25px;
     text-align:center;
   }
-  .hero h1{font-size:38px}
-  section{padding:80px 25px}
+  .hero h1{font-size:40px}
+  section{padding:90px 25px}
 }
 </style>
 </head>
@@ -175,25 +173,37 @@ footer{
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <h1>Luxury Digital <span>Solutions</span></h1>
-    <p>We craft premium websites, applications, and automation solutions for ambitious brands and startups.</p>
+  <div class="hero-box">
+    <h1>Premium Digital <span>Experiences</span></h1>
+    <p>We build luxury-grade websites, applications, and automation systems for ambitious businesses.</p>
     <div class="hero-buttons">
       <a class="btn-gold" href="#">Start a Project</a>
-      <a class="btn-outline" href="#">View Services</a>
+      <a class="btn-outline" href="#">Our Services</a>
     </div>
   </div>
 </section>
 
 <section>
   <div class="section-title">
-    <h2>Our <span>Expertise</span></h2>
+    <h2>Our <span>Services</span></h2>
   </div>
   <div class="services">
-    <div class="card"><h3>Web Development</h3><p>High-performance, scalable websites.</p></div>
-    <div class="card"><h3>Mobile Apps</h3><p>Android & iOS applications.</p></div>
-    <div class="card"><h3>UI / UX Design</h3><p>Elegant, user-focused designs.</p></div>
-    <div class="card"><h3>Automation</h3><p>Smart systems to save time & cost.</p></div>
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>High-end, scalable, and secure websites.</p>
+    </div>
+    <div class="card">
+      <h3>Mobile Applications</h3>
+      <p>Android & iOS apps with premium UX.</p>
+    </div>
+    <div class="card">
+      <h3>UI / UX Design</h3>
+      <p>Elegant designs focused on conversion.</p>
+    </div>
+    <div class="card">
+      <h3>Automation</h3>
+      <p>Smart automation to save time & cost.</p>
+    </div>
   </div>
 </section>
 
@@ -202,7 +212,7 @@ footer{
     <h2>Why <span>Aurelius</span></h2>
   </div>
   <div class="why">
-    We combine strategy, design, and technology to deliver premium digital experiences that build trust and drive growth.
+    Aurelius Technology blends strategy, design, and technology to create premium digital solutions that elevate brands and drive measurable growth.
   </div>
 </section>
 
@@ -212,3 +222,4 @@ footer{
 
 </body>
 </html>
+
